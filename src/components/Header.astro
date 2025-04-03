@@ -1,0 +1,60 @@
+---
+import User from "./icons/User.astro"
+import { Button } from "./ui/button"
+
+const { pathname } = Astro.url
+
+const isActive = (path: string) => pathname === path
+---
+
+<header class="bg-background fixed top-0 z-50 flex h-30 w-full items-center shadow-sm">
+	<div class="container mx-auto flex items-center justify-between px-4 lg:max-w-7xl">
+		<a href="/">
+			<img class="h-7 w-auto" src="/logo.png" alt="Reviewjar Logo" />
+		</a>
+
+		<nav class="font-nexa hidden items-center gap-12 text-black lg:flex">
+			<a
+				href="/"
+				class:list={[
+					"hover:text-foreground/60 transition-colors",
+					isActive("/") ? "font-bold" : "font-normal",
+				]}
+			>
+				Home
+			</a>
+			<a
+				href="/solutions"
+				class:list={[
+					"hover:text-foreground/60 transition-colors",
+					isActive("/solutions") ? "font-bold" : "font-normal",
+				]}
+			>
+				Solutions
+			</a>
+			<a
+				href="/pricing"
+				class:list={[
+					"hover:text-foreground/60 transition-colors",
+					isActive("/pricing") ? "font-bold" : "font-normal",
+				]}
+			>
+				Pricing
+			</a>
+			<a
+				href="/company"
+				class:list={[
+					"hover:text-foreground/60 transition-colors",
+					isActive("/company") ? "font-bold" : "font-normal",
+				]}
+			>
+				Company
+			</a>
+			<Button className="w-60 gap-4" variant="outline"
+				><User class:list="!h-6 !w-auto" /> Sign In</Button
+			>
+		</nav>
+
+		<!-- ToDo <MobileNavbar client:load /> -->
+	</div>
+</header>

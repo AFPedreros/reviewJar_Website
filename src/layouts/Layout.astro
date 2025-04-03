@@ -1,12 +1,13 @@
 ---
-import "@/styles/global.css";
-import { ClientRouter } from "astro:transitions";
+import Header from "@/components/Header.astro"
+import "@/styles/global.css"
+import { ClientRouter } from "astro:transitions"
 
 interface Props {
-	title?: string;
+	title?: string
 }
 
-const { title = "Reviewjar" } = Astro.props;
+const { title = "Reviewjar" } = Astro.props
 ---
 
 <!doctype html>
@@ -63,6 +64,7 @@ const { title = "Reviewjar" } = Astro.props;
 		<ClientRouter />
 	</head>
 	<body>
+		<Header />
 		<slot />
 	</body>
 </html>
