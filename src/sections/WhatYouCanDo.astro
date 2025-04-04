@@ -1,0 +1,57 @@
+---
+import AiPowered from "@/components/icons/AiPowered.astro"
+import AutomateActions from "@/components/icons/AutomateActions.astro"
+import TargetedSms from "@/components/icons/TargetedSms.astro"
+import TipJar from "@/components/icons/TipJar.astro"
+---
+
+<section
+	class="flex w-full bg-gradient-to-r from-[#487FFF] via-[#3B5CF8] to-[#011FD7] py-12 text-white lg:py-20"
+>
+	<div class="container mx-auto flex-col items-center px-4 lg:max-w-7xl">
+		<div
+			class="flex flex-col items-center justify-center gap-2 text-2xl leading-tight md:text-3xl lg:text-4xl"
+		>
+			<h2 class="font-black">You only get one chance to</h2>
+			<img class="w-60" src="/logo-white.png" alt="Reviewjar Logo" />
+		</div>
+
+		<div class="mt-24 flex items-start justify-center gap-9">
+			<div class="flex flex-col">
+				<TargetedSms class="mb-10" />
+
+				<h3 class="mb-5 text-3xl font-black">Targeted SMS</h3>
+				<p class="max-w-54 text-lg text-balance">
+					Generate targeted marketing lists based on customer behavior.
+				</p>
+			</div>
+
+			<div class="flex flex-col">
+				<AiPowered class="mb-10" />
+
+				<h3 class="mb-5 text-3xl font-black">AI Powered</h3>
+				<p class="max-w-54 text-lg text-balance">
+					Improve efficiency and save time while boosting brand reputation.
+				</p>
+			</div>
+
+			<div class="flex flex-col">
+				<AutomateActions class="mb-10" />
+
+				<h3 class="mb-5 text-3xl font-black">Automate Actions</h3>
+				<p class="max-w-54 text-lg text-balance">
+					Get valuable insights nd data-driven recommendations.
+				</p>
+			</div>
+
+			<div class="flex flex-col">
+				<TipJar class="mb-10" />
+
+				<h3 class="mb-5 text-3xl font-black">TipJar</h3>
+				<p class="max-w-54 text-lg text-balance">
+					Team driven goals increasing positive customer interaction.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
