@@ -2,12 +2,19 @@
 import { Button } from "@/components/ui/button"
 
 import ownBusiness from "@/assets/own-business.webp"
+import Hamburger from "@/components/icons/Hamburger.astro"
+import Star from "@/components/icons/Star.astro"
+import WigglyLine from "@/components/icons/WigglyLine.astro"
 ---
 
-<section class="relative w-full bg-[#F5F5F5] py-20 lg:py-40">
-	<img class="absolute bottom-0 left-0 h-full -translate-x-4" src={ownBusiness.src} alt="" />
+<section class="relative min-h-screen w-full bg-[#F5F5F5] py-20">
+	<img class="absolute bottom-0 left-0 h-full -translate-x-10" src={ownBusiness.src} alt="" />
 
-	<div class="container mx-auto px-4 lg:max-w-7xl">
+	<Hamburger class="text-primary absolute right-1/2 bottom-16 translate-x-40" />
+	<Star class="text-primary absolute top-18 right-32" />
+	<WigglyLine class="text-secondary absolute right-60 bottom-18" />
+
+	<div class="container mx-auto translate-x-10 px-4 lg:max-w-7xl">
 		<div class="mx-auto w-fit translate-x-40 space-y-10">
 			<h1 class="text-3xl leading-tight md:text-4xl lg:text-5xl">
 				<span class="text-[#313131]">Own a local</span>
