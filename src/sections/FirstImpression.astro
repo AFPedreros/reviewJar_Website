@@ -1,4 +1,21 @@
-<section class="flex w-full py-12 lg:py-20">
+---
+import Badge from "@/components/icons/Badge.astro"
+import Chicken from "@/components/icons/Chicken.astro"
+import Hat from "@/components/icons/Hat.astro"
+import Heart from "@/components/icons/Heart.astro"
+import Taco from "@/components/icons/Taco.astro"
+import WigglyLine2 from "@/components/icons/WigglyLine2.astro"
+---
+
+<section class="relative flex w-full py-12 lg:py-20">
+	<Chicken class="absolute top-28 left-0 text-[#EAEAEA]" />
+	<WigglyLine2 class="absolute top-10 left-40 text-[#EAEAEA]" />
+	<Badge class="absolute top-20 left-52 text-[#EAEAEA]" />
+
+	<Taco class="absolute top-28 right-0 text-[#EAEAEA]" />
+	<Heart class="absolute top-20 right-40 text-[#EAEAEA]" />
+	<Hat class="absolute top-36 right-50 text-[#EAEAEA]" />
+
 	<div class="container mx-auto items-center px-4 text-center lg:max-w-7xl">
 		<h2 class="mb-4 text-2xl leading-tight md:text-3xl lg:text-4xl">
 			<span class="text-[#313131]">You only get one chance to</span>
