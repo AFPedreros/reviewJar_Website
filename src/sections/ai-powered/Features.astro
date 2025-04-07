@@ -1,0 +1,47 @@
+---
+import { Image } from "astro:assets"
+
+import automatedResponse from "@/assets/ai-powered/automated-responses.webp"
+import locationSpecific from "@/assets/ai-powered/location-specific.webp"
+import verifiedCommunications from "@/assets/ai-powered/verified-communications.webp"
+---
+
+<section class="flex w-full pb-12 lg:pt-[6.25rem] lg:pb-20">
+	<div class="container mx-auto flex items-center gap-6 px-4 text-white lg:max-w-7xl">
+		<div
+			class="relative aspect-square w-1/3 overflow-hidden rounded-4xl shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"
+		>
+			<Image src={locationSpecific} alt="ToDo" class="absolute inset-0 h-full object-cover" />
+			<div class="bg-secondary/30 absolute inset-0"></div>
+			<h3 class="absolute bottom-8 left-8 text-2xl leading-tight md:text-3xl lg:text-4xl">
+				<span>Location-</span>
+				<br />
+				<span class="font-black">Specific</span>
+			</h3>
+		</div>
+
+		<div
+			class="relative aspect-square w-1/3 -translate-y-5 overflow-hidden rounded-4xl shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"
+		>
+			<Image src={automatedResponse} alt="ToDo" class="absolute inset-0 h-full object-cover" />
+			<div class="bg-secondary/30 absolute inset-0"></div>
+			<h3 class="absolute bottom-8 left-8 text-2xl leading-tight md:text-3xl lg:text-4xl">
+				<span>Automated</span>
+				<br />
+				<span class="font-black">Responses</span>
+			</h3>
+		</div>
+
+		<div
+			class="relative aspect-square w-1/3 overflow-hidden rounded-4xl shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"
+		>
+			<Image src={verifiedCommunications} alt="ToDo" class="absolute inset-0 h-full object-cover" />
+			<div class="bg-secondary/30 absolute inset-0"></div>
+			<h3 class="absolute bottom-8 left-8 text-2xl leading-tight md:text-3xl lg:text-4xl">
+				<span>Verified</span>
+				<br />
+				<span class="font-black">Communication</span>
+			</h3>
+		</div>
+	</div>
+</section>
