@@ -1,0 +1,25 @@
+---
+import { Button } from "@/components/ui/button"
+---
+
+<section
+	class="from-primary to-secondary relative flex w-full items-center bg-gradient-to-tr py-20 text-white lg:py-32"
+>
+	<div class="absolute inset-0 z-0 opacity-40">
+		<div
+			class="h-full w-full bg-cover bg-center bg-no-repeat"
+			style={{ backgroundImage: "url('/images/pattern-4.webp')" }}
+		>
+		</div>
+	</div>
+
+	<div
+		class="z-10 container mx-auto flex flex-col items-center space-y-14 px-4 py-12 text-center lg:max-w-7xl"
+	>
+		<h1 class="text-3xl leading-tight font-black md:text-4xl lg:text-5xl">
+			Discover how AI can help<br /> your business grow.
+		</h1>
+
+		<Button variant="secondary" className="text-primary w-52">Get a demo</Button>
+	</div>
+</section>

@@ -1,26 +1,33 @@
+---
+import triangleStar from "@/assets/triangle-star.webp"
+---
+
 <section class="bg-secondary relative flex w-full py-12 text-white lg:py-20">
 	<div class="absolute inset-0 z-0 mix-blend-multiply">
 		<div
-			class="h-full w-full scale-x-[-1] bg-cover bg-top bg-no-repeat"
+			class="h-full w-full scale-x-[-1] bg-cover bg-[50%_30%] bg-no-repeat"
 			style={{ backgroundImage: "url('/images/ai-powered/bg-let-costumers-reach.webp')" }}
 		>
 		</div>
 	</div>
 
-	<div class="z-20 container mx-auto flex-col items-start px-4 lg:max-w-7xl">
-		<h2 class="mb-8 text-3xl leading-tight font-black md:text-4xl lg:text-5xl">
-			<span>Let Customers</span>
-			<br />
-			<span>Reach You Anytime</span>
-		</h2>
+	<div class="z-20 container mx-auto flex items-center gap-10 px-4 lg:max-w-7xl">
+		<div class="">
+			<h2 class="mb-10 text-3xl leading-tight font-black md:text-4xl lg:text-5xl">
+				<span>Let Customers</span>
+				<br />
+				<span>Reach You Anytime</span>
+			</h2>
 
-		<p class="mb-4 max-w-md text-lg text-balance">
-			AI-Powered enables our review management system to automate personalized, timely responses to
-			customer reviews.
-		</p>
-		<p class="max-w-md text-lg text-balance">
-			This enhances engagement, improves efficiency, and maintains a consistent brand voice—all
-			while freeing up valuable time.
-		</p>
+			<p class="mb-6 max-w-md text-lg text-pretty">
+				AI-Powered enables our review management system to automate personalized, timely responses
+				to customer reviews.
+			</p>
+			<p class="max-w-md text-lg text-pretty">
+				This enhances engagement, improves efficiency, and maintains a consistent brand voice—all
+				while freeing up valuable time.
+			</p>
+		</div>
+		<img class="z-30 h-96" src={triangleStar.src} alt="" />
 	</div>
 </section>

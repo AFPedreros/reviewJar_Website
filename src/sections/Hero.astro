@@ -1,8 +1,12 @@
 ---
 import { Button } from "@/components/ui/button"
+
+import heroImage from "@/assets/hero-triangle.webp"
 ---
 
-<section class="relative flex min-h-screen w-full items-center overflow-hidden bg-[#F5F5F5] pt-30">
+<section class="flex min-h-screen w-full items-center overflow-hidden bg-[#F5F5F5] pt-30">
+	<img class="absolute right-0 bottom-0 h-[90vh] translate-y-10" src={heroImage.src} alt="" />
+
 	<div class="container mx-auto px-4 py-12 lg:max-w-7xl">
 		<div class="w-1/2 space-y-10">
 			<h1 class="text-3xl leading-tight md:text-4xl lg:text-5xl">

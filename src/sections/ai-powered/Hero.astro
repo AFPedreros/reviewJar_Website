@@ -1,10 +1,27 @@
 ---
+import Hat from "@/components/icons/Hat.astro"
+import Heart from "@/components/icons/Heart.astro"
+import Taco from "@/components/icons/Taco.astro"
 import { Button } from "@/components/ui/button"
 ---
 
-<section class="bg-secondary relative flex min-h-screen w-full items-center overflow-hidden pt-30">
+<section
+	class="bg-secondary relative flex min-h-screen w-full items-center overflow-hidden pt-30 text-white"
+>
+	<div class="absolute inset-0 z-0">
+		<div
+			class="h-full w-full bg-cover bg-center bg-no-repeat"
+			style={{ backgroundImage: "url('/images/hero-pattern.webp')" }}
+		>
+		</div>
+	</div>
+
+	<Hat class="absolute top-72 right-60" />
+	<Heart class="absolute top-36 right-80" />
+	<Taco class="absolute top-80 left-40" />
+
 	<div
-		class="container mx-auto flex flex-col items-center space-y-10 px-4 py-12 text-center text-white lg:max-w-7xl"
+		class="z-30 container mx-auto flex flex-col items-center space-y-10 px-4 py-12 text-center lg:max-w-7xl"
 	>
 		<h1 class="text-3xl leading-tight md:text-4xl lg:text-5xl">
 			<span>AI</span>
