@@ -1,0 +1,30 @@
+---
+import triangleStar from "@/assets/triangle-star.webp"
+---
+
+<section class="bg-primary relative flex w-full py-12 text-white lg:py-20">
+	<!-- ToDo: arreglar el blend effect	 -->
+	<div class="absolute inset-0 z-0 opacity-40 bg-blend-color">
+		<div
+			class="h-full w-full bg-cover bg-[50%_30%] bg-no-repeat"
+			style={{ backgroundImage: "url('/images/targeted-sms/bg-stay-connected.webp')" }}
+		>
+		</div>
+	</div>
+
+	<div class="z-20 container mx-auto flex items-center gap-10 px-4 lg:max-w-7xl">
+		<div class="">
+			<h2 class="mb-10 text-3xl leading-tight font-black md:text-4xl lg:text-5xl">
+				<span>Stay Connected.</span>
+				<br />
+				<span>Stay Relevant</span>
+			</h2>
+
+			<p class="mb-6 max-w-md text-lg text-pretty">
+				Targeted SMS delivers instant, personalized promotions that grab attention, boost
+				engagement, build loyalty, and drive sales.
+			</p>
+		</div>
+		<img class="z-30 h-96" src={triangleStar.src} alt="" />
+	</div>
+</section>

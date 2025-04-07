@@ -1,0 +1,38 @@
+---
+import Hat from "@/components/icons/Hat.astro"
+import Heart from "@/components/icons/Heart.astro"
+import Taco from "@/components/icons/Taco.astro"
+import { Button } from "@/components/ui/button"
+---
+
+<section
+	class="bg-primary relative flex min-h-screen w-full items-center overflow-hidden pt-30 text-white"
+>
+	<div class="absolute inset-0 z-0">
+		<div
+			class="h-full w-full bg-cover bg-center bg-no-repeat"
+			style={{ backgroundImage: "url('/images/ai-powered/hero-pattern.webp')" }}
+		>
+		</div>
+	</div>
+
+	<Hat class="absolute top-72 right-60 h-20 scale-x-[-1] rotate-25" />
+	<Heart class="absolute top-36 right-90 scale-x-[-1] rotate-20" />
+	<Taco class="absolute top-80 left-40 h-16 scale-x-[-1] -rotate-45" />
+
+	<div
+		class="z-30 container mx-auto flex flex-col items-center space-y-10 px-4 py-12 text-center lg:max-w-7xl"
+	>
+		<h1 class="text-3xl leading-tight md:text-4xl lg:text-5xl">
+			<span>Targeted</span>
+			<span class="font-black">SMS</span>
+		</h1>
+
+		<p class="max-w-md text-lg text-balance">
+			Delivers instant, direct customer communication with guaranteed high open rates and fast
+			attention.
+		</p>
+
+		<Button variant="secondary" className="text-primary w-52">Get a demo</Button>
+	</div>
+</section>
